@@ -37,6 +37,7 @@ app.setErrorHandler((error, _request, reply) => {
     console.error(error);
   } else {
     // TODO: Here we should log to an external tool like DataDog/NewRelic/Sentry
+    // Não foi feito durante as aulas
   }
 
   return reply.status(500).send({ message: "Internal server error." });
